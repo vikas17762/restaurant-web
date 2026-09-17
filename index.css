@@ -1,0 +1,525 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: wheat;
+}
+
+/*=====================================================================================================
+     HEADER
+     ======================================================================================================*/
+header {
+  background-color: #1f1f1f;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 99%;
+  border-radius: 10px;
+}
+header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px orangered;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+}
+.home {
+  color: orangered;
+  font-size: 18px;
+}
+nav a:hover {
+  color: #ff6b35;
+  text-decoration: underline;
+}
+.headerbtn {
+  background-color: #ff6b35;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 40px;
+  border: none;
+  box-shadow: 0px 0px 10px orangered;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.headerbtn:hover {
+  background-color: #ff8e65;
+  scale: 1.05;
+}
+
+/*=====================================================================================================
+     BANNER
+     ======================================================================================================*/
+.banner {
+  background-image: url(banneredit.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: black;
+  height: 400px;
+}
+#data {
+  margin: 100px;
+  padding: 60px;
+}
+.sitebtn {
+  background-color: #ff6b35;
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  box-shadow: 0px 0px 10px orangered;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.sitebtn:hover {
+  background-color: #ff8e65;
+  text-decoration-line: underline;
+  scale: 1.05;
+}
+
+/*=====================================================================================================
+     ABOUT
+     ======================================================================================================*/
+.container1 {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  margin: 20px;
+  margin-top: 40px;
+}
+.img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 4%;
+  box-shadow: 0px 0px 10px 1px orangered;
+}
+
+.dish {
+  display: flex;
+  gap: 10px;
+}
+#dish {
+  border-radius: 10px;
+  width: 280px;
+  height: 280px;
+  border: 1px solid rgb(214, 184, 128);
+  padding: 10px;
+  text-align: center;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+#dish:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 10px 5px orangered;
+  cursor: pointer;
+}
+#dish img {
+  width: 100%;
+  height: 50%;
+  border-radius: 15px;
+}
+.about {
+  width: 40%;
+  height: 40%;
+  padding: 1%;
+}
+.dish0 {
+  width: 600px;
+}
+
+/*=====================================================================================================
+     FACTS
+     ======================================================================================================*/
+.instant {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+
+  background-color: #1c1818;
+  padding: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 10px;
+}
+.instant img {
+  width: 60px;
+  height: 60px;
+}
+.fresh,
+.fast,
+.best,
+.hygien {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0px 0px 5px 1px orangered;
+  border-radius: 10px;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.fresh:hover {
+  box-shadow: 0px 0px 5px 1px rgb(255, 30, 0);
+}
+.fast:hover {
+  box-shadow: 0px 0px 5px 1px rgb(255, 30, 0);
+}
+.best:hover {
+  box-shadow: 0px 0px 5px 1px rgb(255, 30, 0);
+}
+.hygien:hover {
+  box-shadow: 0px 0px 5px 1px rgb(255, 30, 0);
+}
+
+/*=====================================================================================================
+     MENU
+     ======================================================================================================*/
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background-color: rgb(10, 9, 9);
+
+  margin: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.menu1 {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  border-right: 1px solid #1c1818;
+  padding: 10px;
+}
+.menu2 {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+.menu img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.card1 {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #1c1818;
+  padding: 5px;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.card1:hover {
+  box-shadow: 0px 0px 5px 1px orangered;
+  border-radius: 10px;
+  transform: scale(1.02);
+}
+
+h5 {
+  color: #ff6b35;
+}
+#menu {
+  margin-top: 70px;
+}
+.menubtn {
+  background-color: #ff6b35;
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  width: 200px;
+  box-shadow: 0px 0px 10px 1px orangered;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.menubtn:hover {
+  background-color: #ff8e65;
+  text-decoration-line: underline;
+  scale: 1.05;
+}
+
+/*=====================================================================================================
+     Gallery
+     ======================================================================================================*/
+
+.gallery {
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(10, 9, 9);
+  margin-top: 80px;
+
+  border-radius: 10px;
+}
+
+.gallery1 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 10px;
+  gap: 15px;
+}
+.gallery2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 10px;
+  gap: 15px;
+}
+
+.item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.item img:hover {
+  box-shadow: 0px 0px 10px 1px orangered;
+  scale: 1.05;
+  border-radius: 10px;
+}
+
+/*=====================================================================================================
+     CONTACT
+     ======================================================================================================*/
+
+.contactus {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(10, 9, 9);
+
+  gap: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.tabletext {
+  align-items: center;
+  border: 1px solid #1f1f1f;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.table {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+.tabletext:hover {
+  box-shadow: 0px 0px 5px 1px orangered;
+}
+
+input {
+  color: #ff6b35;
+  padding: 10px;
+  margin: 20px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid orangered;
+  background-color: #1f1f1f;
+}
+input:hover {
+  box-shadow: 0px 0px 5px 1px gold;
+}
+select {
+  color: #ff6b35;
+  padding: 10px;
+  margin: 20px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid orangered;
+  background-color: #1f1f1f;
+}
+select:hover {
+  box-shadow: 0px 0px 5px 1px gold;
+}
+
+.info {
+  padding: 5px;
+  border-radius: 10px;
+  height: 75%;
+}
+.info:hover {
+  box-shadow: 0px 0px 5px 1px orangered;
+}
+.address {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.address img {
+  width: 50px;
+  height: 50px;
+  border-radius: 200%;
+}
+
+iframe {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+iframe:hover {
+  box-shadow: 0px 0px 5px 1px orangered;
+}
+#infohead {
+  color: #ff6b35;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+/*footer*/
+
+body {
+  background-color: black;
+  color: white;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  margin: 50px;
+}
+.footerbox {
+  padding: 10px;
+}
+.footercentre {
+  padding: 10px;
+  text-align: center;
+}
+.footer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px orangered;
+}
+
+.footer h1 {
+  color: rgb(255, 242, 169);
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.5px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 10px rgb(255, 242, 169);
+}
+.footer h2 {
+  color: rgb(255, 242, 169);
+  text-transform: capitalize;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.5px;
+  text-decoration-color: rgb(255, 242, 169);
+}
+.footer h5 {
+  color: orangered;
+  font-size: 15px;
+}
+.footer a {
+  color: orangered;
+  text-shadow: 0px 0px 10px rgb(255, 242, 169);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.footer a:hover {
+  color: rgb(255, 242, 169);
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.5px;
+}
+.fhome {
+  color: rgb(255, 242, 169);
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.5px;
+  text-shadow: 0px 0px 10px rgb(255, 242, 169);
+}
+
+.footerbox p {
+  font-style: italic;
+  color: rgb(255, 242, 169);
+  text-transform: capitalize;
+}
+.footerbox button {
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: #ff6b35;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 40px;
+  border: none;
+  box-shadow: 0px 0px 10px orangered;
+  width: 100px;
+  text-align: center;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.footerbox button:hover {
+  background-color: #ff8e65;
+  scale: 1.05;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.5px;
+  cursor: pointer;
+}
+.footer input {
+  width: 250px;
+  border-radius: 10px;
+  padding: 5px;
+  color: orangered;
+  border: 1px solid orangered;
+  background-color: #1f1f1f;
+  height: 20px;
+  text-transform: capitalize;
+  box-shadow: 0px 0px 10px 1px #ff6b35;
+}
+
+/* ================extracted css from inline css ===============*/
+#h1,
+#h2,
+#h3,
+#h4,
+#line {
+  color: #ff6b35;
+  text-shadow: 1px 1px 10px orangered;
+  border-color: orangered;
+}
+#h1,
+#h2,
+#h3 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.5px;
+}
+
+/*=================== mediaquary ===============================*/
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 769px) {
+  header {
+    flex-wrap: wrap;
+    width: auto;
+  }
+  .banner {
+    background-image: url(banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .container1 {
+    flex-wrap: wrap;
+    width: auto;
+  }
+  .instant {
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+  }
+  .menu {
+    grid-template-columns: repeat(1, 1fr);
+    width: auto;
+  }
+}

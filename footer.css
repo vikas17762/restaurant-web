@@ -1,0 +1,96 @@
+
+/*footer*/
+
+body{
+    background-color: black;
+    color: white;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+    margin: 50px;
+}
+.footerbox{
+    padding: 10px;
+}
+.footercentre{
+    padding: 10px;
+    text-align: center;
+
+}
+.footer img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px orangered;
+}
+
+.footer h1{
+    color:  rgb(255, 242, 169);
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.5px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px  rgb(255, 242, 169);
+}
+.footer h2{
+    color:  rgb(255, 242, 169);
+    text-transform: capitalize;
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.5px;
+    text-decoration-color: rgb(255, 242, 169);
+}
+.footer h5{
+    color: orangered;
+    font-size: 15px;
+}
+.footer a{
+    color: orangered;
+    text-shadow: 0px 0px 10px  rgb(255, 242, 169);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+
+}
+
+
+.footerbox p{
+    font-style: italic;
+    color:  rgb(255, 242, 169) ;
+    text-transform: capitalize;
+
+}
+.footerbox button{
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: #ff6b35;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0px 0px 10px orangered;
+    width: 100px;
+    text-align: center; 
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+.footerbox button:hover{
+    background-color: #ff8e65;
+    scale: 1.05;  
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.5px;
+    cursor: pointer;
+
+}
+.footer input{
+    width: 250px;
+            border-radius: 10px;
+            padding: 5px;
+            color: orangered;
+            border: 1px solid orangered;
+            background-color: #1f1f1f;
+            height: 20px;
+            text-transform: capitalize;
+            box-shadow: 0px 0px 10px 1px #ff6b35;
+}
