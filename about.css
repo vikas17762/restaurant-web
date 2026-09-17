@@ -5,6 +5,7 @@
 body {
   background-color: black;
   color: white;
+  margin: 0;
 }
 
 /*=====================================================================================================
@@ -13,27 +14,38 @@ body {
 header {
   background-color: #1f1f1f;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 99%;
-  border-radius: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0;
+  padding: 8px 10px;
+  z-index: 100;
 }
 header img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px orangered;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 nav a {
   color: white;
   text-decoration: none;
-  margin-left: 40px;
+  margin-left: 0;
+  font-size: 14px;
 }
 .habout {
   color: orangered;
-  font-size: 18px;
+  font-size: 16px;
 }
 nav a:hover {
   color: #ff6b35;
@@ -42,48 +54,51 @@ nav a:hover {
 .headerbtn {
   background-color: #ff6b35;
   margin: 5px;
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 40px;
   border: none;
   box-shadow: 0px 0px 10px orangered;
   transition-property: all;
   transition-duration: 0.5s;
+  font-size: 14px;
 }
 
 .headerbtn:hover {
   background-color: #ff8e65;
   scale: 1.05;
 }
+
 /* container1 */
 
 .container1 {
-  padding: 50px;
-  margin-top: 30px;
+  padding: 20px;
+  margin-top: 70px;
   background-image: url(bannerabout.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .about {
-  padding: 50px;
+  padding: 20px;
 }
 #h3contaner1 {
   color: #ff6b35;
   text-shadow: 0px 0px 5px #ff6b35;
   text-transform: capitalize;
-  font-size: 25px;
+  font-size: 20px;
 }
 figure img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 figure {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 #h1contaner1 {
   text-transform: capitalize;
-  font-size: 30px;
+  font-size: 24px;
   text-shadow: 0px 0px 5px #ff6b35;
   text-decoration-line: underline;
   text-decoration-thickness: 0.5px;
@@ -91,29 +106,31 @@ figure {
 #h2contaner1 {
   text-transform: capitalize;
   text-shadow: 0px 0px 5px #ff8e65;
+  font-size: 18px;
 }
 #hicontaner1 {
   text-transform: capitalize;
   font-style: italic;
   text-shadow: 0px 0px 5px #ff8e65;
   text-align: center;
+  font-size: 15px;
 }
 .about p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 
 /* container2 */
 
 .team {
-  padding: 50px;
-  margin-top: 30px;
+  padding: 20px;
+  margin-top: 20px;
 }
 .teambox {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 .box {
   border-radius: 10px;
@@ -138,17 +155,18 @@ figure {
   height: 50px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px 1px #ff6b35;
+  flex-shrink: 0;
 }
 .team h3 {
   text-shadow: 0px 0px 5px #ff6b35;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: capitalize;
   color: #ff6b35;
 }
 .team h2 {
   text-shadow: 0px 0px 5px #ff6b35;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 800;
   text-decoration-line: underline;
   text-decoration-color: #ff8e65;
@@ -158,17 +176,18 @@ figure {
 /* container3 */
 
 .journey {
-  padding: 50px;
-  margin-top: 30px;
+  padding: 20px;
+  margin-top: 20px;
   align-items: center;
 }
 .years {
   border-radius: 10px;
   box-shadow: 0px 0px 5px 0.5px orangered;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
-  width: 800px;
-  margin: auto;
+  width: 100%;
+  max-width: 800px;
+  margin: 10px auto;
   transition-property: all;
   transition-duration: 0.5s;
 }
@@ -180,11 +199,11 @@ figure {
   text-shadow: 0px 0px 5px #ff6b35;
   text-decoration-line: underline;
   text-decoration-color: #ff6b35;
-  font-size: 20px;
+  font-size: 18px;
 }
 .journey h2 {
   text-shadow: 0px 0px 5px #ff6b35;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 800;
   text-decoration-line: underline;
   text-decoration-color: #ff8e65;
@@ -193,21 +212,22 @@ figure {
 
 .journey h3 {
   text-shadow: 0px 0px 5px #ff6b35;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   text-transform: capitalize;
   color: #ff6b35;
 }
 
 .years p {
-  font-size: 17px;
+  font-size: 15px;
 }
+
+/* contact section */
 
 .contactus {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   background-color: rgb(10, 9, 9);
-
   gap: 10px;
   border-radius: 10px;
   padding: 10px;
@@ -223,9 +243,10 @@ figure {
 
 .table {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
 }
 .tabletext:hover {
   box-shadow: 0px 0px 5px 1px orangered;
@@ -234,8 +255,9 @@ figure {
 input {
   color: orangered;
   padding: 10px;
-  margin: 20px;
-  width: 200px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
   border-radius: 5px;
   border: 1px solid orangered;
   background-color: #1f1f1f;
@@ -247,10 +269,10 @@ select {
   color: orangered;
   padding: 10px;
   background-color: #1f1f1f;
-  margin: 20px;
-  width: 200px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
   border-radius: 5px;
-
   border: 1px solid orangered;
 }
 .tablebtn {
@@ -260,7 +282,8 @@ select {
   border-radius: 20px;
   border: 1px solid #ff6b35;
   padding: 10px;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   font-weight: 700;
   transition-property: all;
   transition-duration: 0.5s;
@@ -276,7 +299,7 @@ select {
 .info {
   padding: 5px;
   border-radius: 10px;
-  height: 75%;
+  height: auto;
 }
 .info:hover {
   box-shadow: 0px 0px 5px 1px orangered;
@@ -284,17 +307,19 @@ select {
 .address {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 .address img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 200%;
 }
 
 iframe {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
   border-radius: 10px;
 }
 iframe:hover {
@@ -302,21 +327,18 @@ iframe:hover {
 }
 #infohead {
   color: #ff6b35;
-  font-size: 15px;
+  font-size: 14px;
   text-decoration: underline;
 }
 
 /*footer*/
 
-body {
-  background-color: black;
-  color: white;
-}
 .footer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   padding: 10px;
-  margin: 50px;
+  margin: 20px 10px;
+  gap: 20px;
 }
 .footerbox {
   padding: 10px;
@@ -326,8 +348,8 @@ body {
   text-align: center;
 }
 .footer img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 1px orangered;
 }
@@ -338,6 +360,7 @@ body {
   text-decoration-thickness: 0.5px;
   text-transform: uppercase;
   text-shadow: 0px 0px 10px rgb(255, 242, 169);
+  font-size: 22px;
 }
 .footer h2 {
   color: rgb(255, 242, 169);
@@ -345,17 +368,18 @@ body {
   text-decoration-line: underline;
   text-decoration-thickness: 0.5px;
   text-decoration-color: rgb(255, 242, 169);
+  font-size: 18px;
 }
 .footer h5 {
   color: orangered;
-  font-size: 15px;
+  font-size: 14px;
 }
 .footer a {
   color: orangered;
   text-shadow: 0px 0px 10px rgb(255, 242, 169);
   text-decoration: none;
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 16px;
 }
 .footer a:hover {
   color: rgb(255, 242, 169);
@@ -373,11 +397,11 @@ body {
   padding: 10px;
   background-color: #ff6b35;
   margin: 5px;
-  padding: 5px;
   border-radius: 40px;
   border: none;
   box-shadow: 0px 0px 10px orangered;
-  width: 100px;
+  width: 100%;
+  max-width: 150px;
   text-align: center;
   transition-property: all;
   transition-duration: 0.5s;
@@ -390,13 +414,14 @@ body {
   cursor: pointer;
 }
 .footer input {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   border-radius: 10px;
   padding: 5px;
   color: orangered;
   border: 1px solid orangered;
   background-color: #1f1f1f;
-  height: 20px;
+  height: 30px;
   text-transform: capitalize;
   box-shadow: 0px 0px 10px 1px #ff6b35;
 }
@@ -413,4 +438,138 @@ body {
 
 hr {
   border-color: orangered;
+}
+
+/*=====================================================================================================
+   RESPONSIVE BREAKPOINTS (mobile-first: base styles above are for phones,
+   these media queries progressively enhance for larger screens)
+   ======================================================================================================*/
+
+/* Tablets and small laptops (>= 600px) */
+@media (min-width: 600px) {
+  header {
+    width: 99%;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  nav a {
+    margin-left: 25px;
+    font-size: 15px;
+  }
+  .container1 {
+    padding: 35px;
+    margin-top: 80px;
+  }
+  .about {
+    padding: 35px;
+  }
+  #h1contaner1 {
+    font-size: 27px;
+  }
+  .team,
+  .journey,
+  .contactus {
+    padding: 35px;
+  }
+  .teambox {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  .contactus {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px;
+  }
+  input,
+  select,
+  .tablebtn,
+  .footer input {
+    width: auto;
+  }
+}
+
+/* Desktop (>= 992px) — matches the original fixed-width design */
+@media (min-width: 992px) {
+  header {
+    width: 99%;
+  }
+  nav a {
+    margin-left: 40px;
+    font-size: 16px;
+  }
+  .container1 {
+    padding: 50px;
+    margin-top: 30px;
+  }
+  .about {
+    padding: 50px;
+  }
+  #h3contaner1 {
+    font-size: 25px;
+  }
+  #h1contaner1 {
+    font-size: 30px;
+  }
+  #h2contaner1,
+  #hicontaner1 {
+    font-size: 16px;
+  }
+  .about p {
+    font-size: 18px;
+  }
+  .team,
+  .journey {
+    padding: 50px;
+  }
+  .teambox {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .team h2,
+  .journey h2 {
+    font-size: 30px;
+  }
+  .years {
+    width: 800px;
+    padding: 5px;
+    margin: auto;
+  }
+  .contactus {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+  }
+  .table {
+    padding: 20px;
+    margin: 20px;
+  }
+  input,
+  select {
+    margin: 20px;
+    width: 200px;
+  }
+  .tablebtn {
+    width: 300px;
+  }
+  .address img {
+    width: 50px;
+    height: 50px;
+  }
+  iframe {
+    width: 400px;
+    height: 400px;
+  }
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    margin: 50px;
+  }
+  .footerbox button {
+    width: 100px;
+  }
+  .footer input {
+    width: 250px;
+    height: 20px;
+  }
 }
