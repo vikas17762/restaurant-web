@@ -5,6 +5,7 @@
 body {
   background-color: black;
   color: wheat;
+  margin: 0;
 }
 
 /*=====================================================================================================
@@ -13,27 +14,38 @@ body {
 header {
   background-color: #1f1f1f;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 99%;
-  border-radius: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0;
+  padding: 8px 10px;
+  z-index: 100;
 }
 header img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px orangered;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 nav a {
   color: white;
   text-decoration: none;
-  margin-left: 40px;
+  margin-left: 0;
+  font-size: 14px;
 }
 .home {
   color: orangered;
-  font-size: 18px;
+  font-size: 16px;
 }
 nav a:hover {
   color: #ff6b35;
@@ -42,12 +54,13 @@ nav a:hover {
 .headerbtn {
   background-color: #ff6b35;
   margin: 5px;
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 40px;
   border: none;
   box-shadow: 0px 0px 10px orangered;
   transition-property: all;
   transition-duration: 0.5s;
+  font-size: 14px;
 }
 
 .headerbtn:hover {
@@ -59,17 +72,18 @@ nav a:hover {
      BANNER
      ======================================================================================================*/
 .banner {
-  background-image: url(banneredit.png);
+  background-image: url(banner.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   background-color: black;
-  height: 400px;
+  height: 280px;
+  margin-top: 90px;
 }
 #data {
-  margin: 100px;
-  padding: 60px;
+  margin: 20px;
+  padding: 15px;
 }
 .sitebtn {
   background-color: #ff6b35;
@@ -91,13 +105,14 @@ nav a:hover {
      ======================================================================================================*/
 .container1 {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  padding: 20px;
-  margin: 20px;
-  margin-top: 40px;
+  padding: 15px;
+  margin: 15px;
+  margin-top: 30px;
 }
 .img img {
-  height: 100%;
+  height: auto;
   width: 100%;
   border-radius: 4%;
   box-shadow: 0px 0px 10px 1px orangered;
@@ -105,15 +120,19 @@ nav a:hover {
 
 .dish {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 #dish {
   border-radius: 10px;
-  width: 280px;
-  height: 280px;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
   border: 1px solid rgb(214, 184, 128);
   padding: 10px;
   text-align: center;
+  margin: 0 auto;
   transition-property: all;
   transition-duration: 0.5s;
 }
@@ -128,12 +147,13 @@ nav a:hover {
   border-radius: 15px;
 }
 .about {
-  width: 40%;
-  height: 40%;
-  padding: 1%;
+  width: 100%;
+  height: auto;
+  padding: 3%;
 }
 .dish0 {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
 
 /*=====================================================================================================
@@ -141,26 +161,26 @@ nav a:hover {
      ======================================================================================================*/
 .instant {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   gap: 15px;
 
   background-color: #1c1818;
-  padding: 1%;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding: 4%;
   border-radius: 10px;
 }
 .instant img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 .fresh,
 .fast,
 .best,
 .hygien {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
   align-items: center;
+  padding: 10px;
   box-shadow: 0px 0px 5px 1px orangered;
   border-radius: 10px;
   transition-property: all;
@@ -185,12 +205,12 @@ nav a:hover {
      ======================================================================================================*/
 .menu {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 10px;
   background-color: rgb(10, 9, 9);
 
-  margin: 50px;
-  padding: 20px;
+  margin: 15px;
+  padding: 15px;
   border-radius: 10px;
   margin-top: 10px;
 }
@@ -198,7 +218,8 @@ nav a:hover {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   gap: 10px;
-  border-right: 1px solid #1c1818;
+  border-right: none;
+  border-bottom: 1px solid #1c1818;
   padding: 10px;
 }
 .menu2 {
@@ -208,12 +229,13 @@ nav a:hover {
   padding: 10px;
 }
 .menu img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 .card1 {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   border-bottom: 1px solid #1c1818;
   padding: 5px;
@@ -230,14 +252,15 @@ h5 {
   color: #ff6b35;
 }
 #menu {
-  margin-top: 70px;
+  margin-top: 30px;
 }
 .menubtn {
   background-color: #ff6b35;
   border-radius: 20px;
   padding: 10px;
   border: none;
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   box-shadow: 0px 0px 10px 1px orangered;
   transition-property: all;
   transition-duration: 0.5s;
@@ -257,27 +280,29 @@ h5 {
   margin: 10px;
   padding: 10px;
   background-color: rgb(10, 9, 9);
-  margin-top: 80px;
+  margin-top: 40px;
 
   border-radius: 10px;
 }
 
 .gallery1 {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin: 10px;
-  gap: 15px;
+  gap: 10px;
 }
 .gallery2 {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin: 10px;
-  gap: 15px;
+  gap: 10px;
 }
 
 .item img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 10px;
   transition-property: all;
   transition-duration: 0.5s;
@@ -294,7 +319,7 @@ h5 {
 
 .contactus {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   background-color: rgb(10, 9, 9);
 
   gap: 10px;
@@ -312,9 +337,10 @@ h5 {
 
 .table {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
 }
 .tabletext:hover {
   box-shadow: 0px 0px 5px 1px orangered;
@@ -323,8 +349,9 @@ h5 {
 input {
   color: #ff6b35;
   padding: 10px;
-  margin: 20px;
-  width: 200px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
   border-radius: 5px;
   border: 1px solid orangered;
   background-color: #1f1f1f;
@@ -335,8 +362,9 @@ input:hover {
 select {
   color: #ff6b35;
   padding: 10px;
-  margin: 20px;
-  width: 200px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
   border-radius: 5px;
   border: 1px solid orangered;
   background-color: #1f1f1f;
@@ -348,25 +376,27 @@ select:hover {
 .info {
   padding: 5px;
   border-radius: 10px;
-  height: 75%;
+  height: auto;
 }
 .info:hover {
   box-shadow: 0px 0px 5px 1px orangered;
 }
 .address {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 .address img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 200%;
 }
 
 iframe {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
   border-radius: 10px;
 }
 iframe:hover {
@@ -374,21 +404,18 @@ iframe:hover {
 }
 #infohead {
   color: #ff6b35;
-  font-size: 15px;
+  font-size: 14px;
   text-decoration: underline;
 }
 
 /*footer*/
 
-body {
-  background-color: black;
-  color: white;
-}
 .footer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   padding: 10px;
-  margin: 50px;
+  margin: 20px 10px;
+  gap: 20px;
 }
 .footerbox {
   padding: 10px;
@@ -398,8 +425,8 @@ body {
   text-align: center;
 }
 .footer img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 1px orangered;
 }
@@ -410,6 +437,7 @@ body {
   text-decoration-thickness: 0.5px;
   text-transform: uppercase;
   text-shadow: 0px 0px 10px rgb(255, 242, 169);
+  font-size: 22px;
 }
 .footer h2 {
   color: rgb(255, 242, 169);
@@ -417,17 +445,18 @@ body {
   text-decoration-line: underline;
   text-decoration-thickness: 0.5px;
   text-decoration-color: rgb(255, 242, 169);
+  font-size: 18px;
 }
 .footer h5 {
   color: orangered;
-  font-size: 15px;
+  font-size: 14px;
 }
 .footer a {
   color: orangered;
   text-shadow: 0px 0px 10px rgb(255, 242, 169);
   text-decoration: none;
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 16px;
 }
 .footer a:hover {
   color: rgb(255, 242, 169);
@@ -451,11 +480,11 @@ body {
   padding: 10px;
   background-color: #ff6b35;
   margin: 5px;
-  padding: 5px;
   border-radius: 40px;
   border: none;
   box-shadow: 0px 0px 10px orangered;
-  width: 100px;
+  width: 100%;
+  max-width: 150px;
   text-align: center;
   transition-property: all;
   transition-duration: 0.5s;
@@ -468,13 +497,14 @@ body {
   cursor: pointer;
 }
 .footer input {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   border-radius: 10px;
   padding: 5px;
   color: orangered;
   border: 1px solid orangered;
   background-color: #1f1f1f;
-  height: 20px;
+  height: 30px;
   text-transform: capitalize;
   box-shadow: 0px 0px 10px 1px #ff6b35;
 }
@@ -496,30 +526,157 @@ body {
   text-decoration-thickness: 0.5px;
 }
 
-/*=================== mediaquary ===============================*/
-@media (max-width: 1024px) {
-}
+/*=====================================================================================================
+   RESPONSIVE BREAKPOINTS (mobile-first: base styles above are for phones,
+   these media queries progressively enhance for larger screens)
+   ======================================================================================================*/
 
-@media (max-width: 769px) {
+/* Tablets and small laptops (>= 600px) */
+@media (min-width: 600px) {
   header {
-    flex-wrap: wrap;
-    width: auto;
+    width: 99%;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  nav a {
+    margin-left: 20px;
+    font-size: 15px;
   }
   .banner {
-    background-image: url(banner.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 320px;
+    margin-top: 70px;
   }
   .container1 {
+    flex-wrap: nowrap;
+    padding: 20px;
+  }
+  .dish {
     flex-wrap: wrap;
-    width: auto;
   }
   .instant {
     grid-template-columns: repeat(2, 1fr);
-    width: auto;
   }
   .menu {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px;
+  }
+  .menu1 {
+    border-right: 1px solid #1c1818;
+    border-bottom: none;
+  }
+  .gallery1,
+  .gallery2 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .contactus {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px;
+  }
+  input,
+  select,
+  .footer input {
     width: auto;
+  }
+}
+
+/* Desktop (>= 992px) — matches the original fixed-width design */
+@media (min-width: 992px) {
+  nav a {
+    margin-left: 40px;
+    font-size: 16px;
+  }
+  .home {
+    font-size: 18px;
+  }
+  .banner {
+    background-image: url(banneredit.png);
+    height: 400px;
+    margin-top: 0;
+  }
+  #data {
+    margin: 100px;
+    padding: 60px;
+  }
+  .container1 {
+    margin-top: 40px;
+    padding: 20px;
+    margin: 20px;
+  }
+  .dish0 {
+    width: 600px;
+  }
+  .about {
+    width: 40%;
+    height: 40%;
+    padding: 1%;
+  }
+  .instant {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .instant img {
+    width: 60px;
+    height: 60px;
+  }
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px;
+  }
+  .menu img {
+    width: 50px;
+    height: 50px;
+  }
+  #menu {
+    margin-top: 70px;
+  }
+  .gallery {
+    margin-top: 80px;
+  }
+  .gallery1,
+  .gallery2 {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+  }
+  .item img {
+    width: 200px;
+    height: 200px;
+    aspect-ratio: auto;
+  }
+  .contactus {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .table {
+    padding: 20px;
+    margin: 20px;
+  }
+  input,
+  select {
+    margin: 20px;
+    width: 200px;
+  }
+  .address img {
+    width: 50px;
+    height: 50px;
+  }
+  iframe {
+    width: 400px;
+    height: 400px;
+  }
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    margin: 50px;
+  }
+  .footerbox button {
+    width: 100px;
+  }
+  .footer input {
+    width: 250px;
+    height: 20px;
   }
 }
